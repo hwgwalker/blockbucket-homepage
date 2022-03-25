@@ -103,9 +103,6 @@ margin-top: 110px;
 
 @media only screen and (max-width: 900px) and (min-width: 600px) {
 
-    .info {
-
-    }
 
     .instructions {
         display: flex;
