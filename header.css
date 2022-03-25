@@ -2,7 +2,7 @@
 
 .nav {
     height: 120px;
-    width: 1600px;
+    /* width: 1600px; */
     padding: 20px;
     padding-left: 60px;
     padding-right: 60px;
@@ -82,7 +82,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 640px;
+    width: 100%;
     position: relative;
+    margin: 0 auto;
 }
 
 .header__content {
@@ -166,11 +168,15 @@
 .header__shapes {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .header__cubes {
     display: inline-block;
+    width: 100%;
+    height: 500px;
     z-index: 3;
+    position: relative;
 }
 
 /* FROM LEFT TO RIGHT */
@@ -179,16 +185,16 @@
     height: 55px;
     width: 50px;
     position: absolute;
-    right: 97.5%;
-    bottom: 220%;
+    right: 97%;
+    bottom: 25%;
     transform: rotate(3deg);
 }
 .cube__2 {
     height: 107px;
     width: 99px;
     position: absolute;
-    right: 90%;
-    bottom: 30%;
+    right: 88%;
+    bottom: -8%;
     z-index: 2;
     transform: rotate(105deg);
 }
@@ -197,7 +203,7 @@
     width: 33px;
     position: absolute;
     right: 11%;
-    bottom: 180%;
+    bottom: 19%;
     transform: rotate(18deg);
 }
 .cube__4 {
@@ -205,7 +211,7 @@
     width: 55px;
     position: absolute;
     right: 8%;
-    bottom: 72%;
+    bottom: 2%;
     transform: rotate(170deg);
 }
 .cube__5 {
@@ -213,23 +219,23 @@
     width: 77px;
     position: absolute;
     right: 4%;
-    bottom: 180%;
+    bottom: 17%;
     transform: rotate(155deg);
 }
 .cube__6 {
     height: 42px;
     width: 40px;
     position: absolute;
-    right: 3%;
-    bottom: 45%;
+    right: 5%;
+    bottom: -5.5%;
     transform: rotate(108deg);
 }
 .cube__7 {
     height: 13px;
     width: 11px;
     position: absolute;
-    right: 1%;
-    bottom: 100%;
+    right: 3%;
+    bottom: 3%;
 }
 
 .header__triangles {
@@ -240,6 +246,10 @@
 .shape_right {
     transform: scalex(-1);
     z-index: 1;
+    width: 50%;
+}
+.shape_left {
+    width: 50%;
 }
 
 /* MEDIA QUERIES */
@@ -247,7 +257,7 @@
 @media only screen and (max-width: 400px) {
     .nav {
         height: 120px;
-        width: 375px;
+       width: 100%;
         padding: 0px 25px 0px 25px; 
         display: flex;
         flex-direction: row;
@@ -285,6 +295,11 @@
 
     .header {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .header__content {
@@ -355,20 +370,24 @@
         margin-bottom: 10px;
     }
 
+    .header__prompt {
+        margin-bottom: 60px;
+    }
+
     .cube__1 {
         height: 29px;
         width: 32px;
         position: absolute;
-        right: 67%;
-        bottom: 100%;
+        right: 95%;
+        bottom: 10%;
         transform: rotate(3deg);
     }
     .cube__2 {
         height: 58px;
         width: 62px;
         position: absolute;
-        right: 61%;
-        bottom: -22%;
+        right: 75%;
+        bottom: -5%;
         z-index: 2;
         transform: rotate(112deg);
     }
@@ -376,46 +395,36 @@
         height: 19px;
         width: 17px;
         position: absolute;
-        right: 36.5%;
-        bottom: 90%;
+        right: 15%;
+        bottom: 5%;
         transform: rotate(18deg);
     }
     .cube__4 {
         height: 32px;
         width: 33px;
         position: absolute;
-        right: 34%;
-        bottom: 5%;
+        right: 8%;
+        bottom: -3%;
         transform: rotate(170deg);
     }
     .cube__5 {
         height: 45px;
         width: 41px;
         position: absolute;
-        right: 30.5%;
-        bottom: 80%;
+        right: -1.5%;
+        bottom: 4%;
         transform: rotate(150deg);
     }
     .cube__6 {
-        height: 24px;
-        width: 25px;
-        position: absolute;
-        right: 3%;
-        bottom: 45%;
-        transform: rotate(108deg);
         display: none;
     }
     .cube__7 {
-        height: 8px;
-        width: 7px;
-        position: absolute;
-        right: 1%;
-        bottom: 100%;
         display: none;
     }
 
     .header__shapes {
         position: absolute;
+        width: 100%;
         bottom: 0%;
         left: 50%;
         transform: translateX(-50%); 
@@ -427,13 +436,13 @@
     
 
     .shape_left {
-        width: 500px;
-        height: auto;
+        width: 50%;
+        /* height: auto; */
     }
 
     .shape_right {
-        width: 500px;
-        height: auto;
+        width: 50%;
+        /* height: auto; */
     }
 
 }

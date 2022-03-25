@@ -60,7 +60,7 @@ margin-top: 110px;
 @media only screen and (max-width: 400px) {
 
     .info__content {
-        width: 311px;
+        width: 100vw;
         padding-top: 100px;
         margin: 0 auto;
     }
