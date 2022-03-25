@@ -6,8 +6,8 @@
 }
 
 .faq__content {
-    margin-top: 100px;
-    height: 800px;
+    margin-top: 70px;
+    height: 762px;
 }
 
 .faq__content > h1 {
@@ -16,7 +16,7 @@
 }
 
 .faq__questions {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,9 +73,9 @@
 
 @media only screen and (max-width: 400px) {
     .faq__content {
-        margin-top: 50px;
+        margin-top: 40px;
         height: auto;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     .faq__content > h1 {
         font-size: 22px;
