@@ -1,0 +1,118 @@
+
+.faq {
+    background-image: url(./assets/hexagons-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.faq__content {
+    margin-top: 100px;
+    height: 800px;
+}
+
+.faq__content > h1 {
+   font-size: 64px;
+   font-weight: 500;
+}
+
+.faq__questions {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 30px;
+    margin: 10px;
+    width: 700px;
+    height: 80px;
+    background-color: #FFF;
+}
+
+.question--active {
+    text-align: left;
+    padding: 30px;
+    margin: 10px;
+    width: 700px;
+    height: 80px;
+    background-color: #FFF;
+}
+
+.question > h2, .question--active h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.question--active {
+    height: 190px;
+}
+.question--active > p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.faq__down_icon--active {
+    transform: scaleY(-1);
+}
+
+.question__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.answer {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .faq__content {
+        margin-top: 50px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .faq__content > h1 {
+        font-size: 22px;
+     }
+
+     .question {
+        padding: 20px;
+        margin: 10px;
+        width: 351px;
+        height: auto;
+    }
+
+    .question--active {
+        padding: 20px;
+        margin: 10px;
+        width: 351px;
+        height: auto;
+        background-color: #FFF;
+    }
+
+    .question > h2, .question--active h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .footer__links {
+        width: 315px;
+    }
+
+    .question__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .faq__down_icon, .faq__down_icon--active {
+        width: 7px;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,442 @@
+
+
+.nav {
+    height: 120px;
+    width: 1600px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 260px;
+    height: 56px;
+    justify-self: start;
+}
+
+.nav__links {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 20px;
+}
+
+.nav__link_1 > h1, .nav__link_2 > h1 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav__link_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav__tag {
+    background-color: rgba(192, 227, 59, 0.2);
+    width: 96px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.nav__tag > h2 {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #C0E33B;
+}
+
+.nav__buttons > img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+.nav__button {
+    all: unset;
+    width: 186px;
+    height: 46px;
+    font-size: 18px;
+    background-color: #C0E33B;
+}
+
+/* HEADER CONTENT */
+
+.header {
+    background-image: url(./assets/stars-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    position: relative;
+}
+
+.header__content {
+    width: 560px;
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__content > h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFF;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.header__content > h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.header__content > h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #C0E33B;
+    width: 165px;
+    border-bottom: 1px solid rgba(192, 227, 59, 0.3);
+}
+
+.content__tokens_menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.content__tokens_menu > h3 {
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 400;
+    align-self: flex-start;
+
+}
+
+.content__menu {
+    height: 56px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #1A1930;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.content__menu--mobile {
+    display: none;
+}
+.content__menu > h4 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.content__lock_icon {
+    align-self: flex-start;
+    margin-right: 25px;
+}
+
+.content__drop_arrow {
+    align-self: flex-end;
+    margin-left: 100px;
+}
+
+/* SHAPES */
+
+.header__shapes {
+    position: absolute;
+    bottom: 0;
+}
+
+.header__cubes {
+    display: inline-block;
+    z-index: 3;
+}
+
+/* FROM LEFT TO RIGHT */
+
+.cube__1 {
+    height: 55px;
+    width: 50px;
+    position: absolute;
+    right: 97.5%;
+    bottom: 220%;
+    transform: rotate(3deg);
+}
+.cube__2 {
+    height: 107px;
+    width: 99px;
+    position: absolute;
+    right: 90%;
+    bottom: 30%;
+    z-index: 2;
+    transform: rotate(105deg);
+}
+.cube__3 {
+    height: 30px;
+    width: 33px;
+    position: absolute;
+    right: 11%;
+    bottom: 180%;
+    transform: rotate(18deg);
+}
+.cube__4 {
+    height: 57px;
+    width: 55px;
+    position: absolute;
+    right: 8%;
+    bottom: 72%;
+    transform: rotate(170deg);
+}
+.cube__5 {
+    height: 70px;
+    width: 77px;
+    position: absolute;
+    right: 4%;
+    bottom: 180%;
+    transform: rotate(155deg);
+}
+.cube__6 {
+    height: 42px;
+    width: 40px;
+    position: absolute;
+    right: 3%;
+    bottom: 45%;
+    transform: rotate(108deg);
+}
+.cube__7 {
+    height: 13px;
+    width: 11px;
+    position: absolute;
+    right: 1%;
+    bottom: 100%;
+}
+
+.header__triangles {
+    display: flex;
+    margin-top: auto;
+}
+
+.shape_right {
+    transform: scalex(-1);
+    z-index: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 400px) {
+    .nav {
+        height: 120px;
+        width: 375px;
+        padding: 0px 25px 0px 25px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__logo {
+        width: 124px;
+        height: 27px;
+        justify-self: start;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .nav__buttons {
+        width: fit-content;
+    }
+ 
+    .nav__buttons > img {
+        display: none;
+    }
+
+    .nav__button {
+        all: unset;
+        width: 134px;
+        height: 38px;
+        font-size: 14px;
+        background-color: #C0E33B;
+    }
+
+    /* HEADER */
+
+    .header__content {
+        width: 315px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .header__content > h1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #FFF;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    
+.header__content > h2 {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.header__content > h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #C0E33B;
+    width: 165px;
+    border-bottom: 1px solid rgba(192, 227, 59, 0.3);
+}
+    .content__menu {
+        display: none;
+    }
+
+    .content__menu--mobile {
+        display: flex;
+        width: 310px;
+        height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: #1A1930;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .content__menu--mobile > h4 {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .content__drop_arrow {
+        width: 10px;
+        height: 5px;   
+        align-self: center;
+        margin-right: 5px;  
+        margin-left: 10px;
+    }
+    .content__tokens_menu {
+     margin-bottom: 83px;
+ }
+
+    .content__tokens_menu > h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .header__prompt {
+        margin-bottom: 33px;
+    }
+
+
+    .cube__1 {
+        height: 29px;
+        width: 32px;
+        position: absolute;
+        right: 95%;
+        bottom: 190%;
+        transform: rotate(3deg);
+    }
+    .cube__2 {
+        height: 58px;
+        width: 62px;
+        position: absolute;
+        right: 78%;
+        bottom: -35%;
+        z-index: 2;
+        transform: rotate(105deg);
+    }
+    .cube__3 {
+        height: 19px;
+        width: 17px;
+        position: absolute;
+        right: 15%;
+        bottom: 150%;
+        transform: rotate(18deg);
+    }
+    .cube__4 {
+        height: 32px;
+        width: 33px;
+        position: absolute;
+        right: 8%;
+        bottom: 10%;
+        transform: rotate(170deg);
+    }
+    .cube__5 {
+        height: 45px;
+        width: 41px;
+        position: absolute;
+        right: -2%;
+        bottom: 120%;
+        transform: rotate(155deg);
+    }
+    .cube__6 {
+        height: 24px;
+        width: 25px;
+        position: absolute;
+        right: 3%;
+        bottom: 45%;
+        transform: rotate(108deg);
+        display: none;
+    }
+    .cube__7 {
+        height: 8px;
+        width: 7px;
+        position: absolute;
+        right: 1%;
+        bottom: 100%;
+        display: none;
+    }
+
+    .header__shapes {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header__cubes {
+        display: flex;
+        flex-direction: row;
+        z-index: 3;
+    }
+    
+
+    .shape_left {
+        width: 500px;
+        height: auto;
+    }
+
+    .shape_right {
+        width: 500px;
+        height: auto;
+    }
+
+}
