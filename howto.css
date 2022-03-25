@@ -109,11 +109,12 @@ margin-top: 110px;
 
     .instructions {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         margin: 0 auto;
-        height: 400px;
+        height: auto;
         margin-bottom: 60px;
     }
     
@@ -139,4 +140,18 @@ margin-top: 110px;
         width: 215px;
         height: 46px;
     }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 900px) {
+    .instructions {
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    .instructions__step {
+        margin-top: 60px;
+    }
+
 }
