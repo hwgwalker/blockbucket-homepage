@@ -71,7 +71,7 @@
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .faq__content {
         margin-top: 40px;
         height: auto;
@@ -115,4 +115,32 @@
         width: 7px;
         margin-left: 20px;
     }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .faq__content > h1 {
+        font-size: 45px;
+     }
+
+     .question {
+        padding: 20px;
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    .question--active {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .question > h2, .question--active h2 {
+        font-size: 19px;
+    }
+
+    .faq__down_icon, .faq__down_icon--active {
+        margin-left: 30px;
+    }
+
+    
 }
